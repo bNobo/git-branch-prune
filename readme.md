@@ -31,4 +31,4 @@ By default it will not delete branches that are not fully merge. To force deleti
 
 ## How it works ?
 
-The tool first executes `git remote prune origin` to clean local repository from remotes that do not exist anymore. Then it makes a comparison between remote an local branches and make a `git branch -d <branch_name>` on every local branch that do not have a remote counterpart. Specifying "--force" argument force the deletion by replacing "-d" with "-D".
+The tool first executes `git remote prune origin` to clean local repository from remotes that do not exist anymore. Then it makes a comparison between remote and local branches and make a `git branch -d <branch_name>` on every local branch that do not have a remote counterpart. Specifying "--force" argument force the deletion by replacing "-d" with "-D".
